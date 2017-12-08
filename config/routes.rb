@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
+  get 'users/create'
+
+  get 'users/show'
+
+  get 'users/create'
+
+  get 'users/show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -58,4 +68,6 @@ Rails.application.routes.draw do
   resources :projects do
     resources :tickets
   end
+  
+  resources :users
 end
