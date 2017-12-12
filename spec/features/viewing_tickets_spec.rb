@@ -14,6 +14,8 @@ feature "Viewing Tickets" do
         ticket.update(user: user)
         ticket.user = user
         ticket.save
+        define_permission!(user, "view", textmate_2)
+        sign_in_as!(user)
         visit '/'
     end
     
