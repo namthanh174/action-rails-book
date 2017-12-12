@@ -34,6 +34,9 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+
+gem 'cancan', '~> 1.6.10'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
