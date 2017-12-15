@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171213101837) do
+ActiveRecord::Schema.define(version: 20171214065131) do
+
+  create_table "assets", force: :cascade do |t|
+    t.string   "asset",      limit: 255
+    t.integer  "ticket_id",  limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "permissions", force: :cascade do |t|
     t.integer  "user_id",    limit: 4
@@ -36,7 +43,6 @@ ActiveRecord::Schema.define(version: 20171213101837) do
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.integer  "user_id",     limit: 4
-    t.string   "asset",       limit: 255
   end
 
   add_index "tickets", ["project_id"], name: "index_tickets_on_project_id", using: :btree
