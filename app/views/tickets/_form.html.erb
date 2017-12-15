@@ -20,6 +20,7 @@
         <%= f.label :description %>
         <%= f.text_area :description %>
     </p>
+
     <% number = 0 %>
     <%= f.fields_for :assets do |asset| %>
     <p>
@@ -27,5 +28,6 @@
         <%= asset.file_field :asset %>
     </p>
     <% end %>
+
     <%= f.submit %>
 <% end %>

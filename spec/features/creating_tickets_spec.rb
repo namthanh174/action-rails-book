@@ -53,6 +53,7 @@ feature "Creating Tickets" do
     scenario "Creating a ticket with an attachment" do
        fill_in "Title", with: "Add documentation for blink tag"
        fill_in "Description", with: "The blink tag has a speed attribute"
+
        
        
        attach_file "File #1", Rails.root.join("spec/fixtures/speed.txt")
@@ -68,5 +69,6 @@ feature "Creating Tickets" do
           expect(page).to have_content('spin.txt')
           expect(page).to have_content('gradient.txt')
       end
+
     end
 end
