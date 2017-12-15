@@ -10,6 +10,8 @@ Rails.application.routes.draw do
                           as: "set_permissions"
     end
   end
+  
+  resources :files
 
   get 'users/new'
 
