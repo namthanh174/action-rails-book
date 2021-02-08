@@ -37,7 +37,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 gem 'cancan', '~> 1.6.10'
 
-gem 'carrierwave', '0.8.0'
+gem 'carrierwave', '1.3.2'
 gem 'database_cleaner', '1.0.1'
 
 # Use Capistrano for deployment
